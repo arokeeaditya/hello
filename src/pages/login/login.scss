@@ -1,3 +1,85 @@
 page-login {
 
+   background: ghostwhite;
+   .icon-cus i {
+     padding-right: 5px;
+   }
+
+   .btn-fb {
+     background-color: #3B5998;
+     font-weight: 100;
+     padding: 20px 0px;
+   }
+
+   .btn-goo {
+     background-color: #D50F26;
+     font-weight: 100;
+     padding: 20px 0px;
+   }
+
+   .bor {
+     border-top: 2px solid red;
+     padding-right: 30px;
+   }
+
+   .captchas {
+     margin-top: 100px;
+   }
+
+   .row1 h5 {
+     margin-bottom: 5px;
+   }
+
+   svg:not(:root).svg-inline--fa {
+     margin-right: 10px;
+   }
+
+   .item-md.item-input.item-input-has-focus .item-inner,
+   .item-md.item-input.input-has-focus .item-inner {
+     border-bottom-color: none;
+     border: none;
+   }
+
+   .item-md.item-block .item-inner {
+     border-bottom: none;
+     padding-right: 0px;
+   }
+
+   .item-input ion-input,
+   .item-input ion-textarea {
+     // border:1px solid darkgray;
+   }
+
+   .item-md {
+     padding-left: 0px;
+   }
+
+   .text-input::-moz-placeholder {
+     color: darkgray;
+   }
+
+   .text-input:-ms-input-placeholder {
+     color: darkgray;
+   }
+
+   .text-input::-webkit-input-placeholder {
+     text-indent: 0;
+     color: darkgray;
+   }
+
+   .item-cus {
+     margin-top: 20px;
+     background-color: orangered;
+     font-weight: 100;
+     padding: 20px 0px;
+   }
+
+
+
 }
+.item-md.item-input.item-input-has-focus.item-inner,
+.item-md.item-input.input-has-focus.item-inner {
+  border: none;
+  border-bottom-color: none !important;
+}
+

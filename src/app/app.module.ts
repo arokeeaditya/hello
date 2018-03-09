@@ -1,4 +1,5 @@
-
+import { PrivacyPage } from './../pages/privacy/privacy';
+import { SplashPageModule } from './../pages/splash/splash.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -21,6 +22,12 @@ firebase.initializeApp(firebaseConfig)
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { LoginPage } from '../pages/login/login';
+import { LoginPageModule } from '../pages/login/login.module';
+
+import { SplashPage } from './../pages/splash/splash';
+import { TermsPage } from '../pages/terms/terms';
+import { TermsPageModule } from '../pages/terms/terms.module';
+import { PrivacyPageModule } from '../pages/privacy/privacy.module';
 
 @NgModule({
   declarations: [
@@ -30,12 +37,20 @@ import { LoginPage } from '../pages/login/login';
   imports: [
     BrowserModule,
     IonicModule.forRoot(MyApp),
-    AngularFireModule.initializeApp(firebaseConfig)
+    AngularFireModule.initializeApp(firebaseConfig),
+    LoginPageModule,
+    SplashPageModule,
+    TermsPageModule,
+    PrivacyPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    LoginPage,
+    SplashPage,
+    TermsPage,
+    PrivacyPage
   ],
   providers: [
     StatusBar,
