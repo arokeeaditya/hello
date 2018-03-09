@@ -1,41 +1,42 @@
 <ion-grid>
-  <ion-row class="row1">
-    <ion-col text-center>
-      <h5>GET STARTED</h5>
-      <span class="bor"></span>
-    </ion-col>
-  </ion-row>
-  <ion-row>
-    <ion-col>
-      <ion-item>
-        <ion-icon name="star"></ion-icon>
-        <ion-input type="number" placeholder="ENTER MOBILE NUMBER"></ion-input>
-      </ion-item>
-      <button class="item-cus" ion-button full>VERIFY USING OTP</button>
-      <div class="captchas">
+    <ion-row class="row1">
+        <ion-col text-center>
+            <h5>GET STARTED</h5>
+            <span class="bor"></span>
+        </ion-col>
+    </ion-row>
+    <ion-row>
+        <ion-col>
+            <ion-item>
+                <ion-icon name="star"></ion-icon>
+                <ion-input type="number" placeholder="ENTER MOBILE NUMBER"></ion-input>
+            </ion-item>
+            <button class="item-cus" ion-button full>VERIFY USING OTP</button>
+            <div class="captchas">
 
-      </div>
-    </ion-col>
-  </ion-row>
+            </div>
+        </ion-col>
+    </ion-row>
 
-  <ion-row class="ico-cus">
-    <ion-col col-12 text-center>
-      <p>OR SIGN IN WITH</p>
-    </ion-col>
-    <ion-col col-6>
-      <button ion-button icon-left block class="btn-fb">
+    <ion-row class="ico-cus">
+        <ion-col col-12 text-center>
+            <p>OR SIGN IN WITH</p>
+        </ion-col>
+        <ion-col col-6>
+            <button ion-button icon-left block class="btn-fb">
         <i class="fab fa-facebook-f"></i>
         FACEBOOK
       </button>
-    </ion-col>
-    <ion-col col-6>
-      <button ion-button icon-left block class="btn-goo">
+        </ion-col>
+        <ion-col col-6>
+            <button ion-button icon-left block class="btn-goo" (click)="login()">
         <i class="fab fa-google-plus-g"></i>
         GOOGLE
       </button>
-    </ion-col>
 
-  </ion-row>
+        </ion-col>
+
+    </ion-row>
 
 
 </ion-grid>
