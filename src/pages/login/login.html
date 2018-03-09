@@ -7,14 +7,16 @@
     </ion-row>
     <ion-row>
         <ion-col>
+            <div id="recaptcha-container"></div>
             <ion-item>
                 <ion-icon name="star"></ion-icon>
-                <ion-input type="number" placeholder="ENTER MOBILE NUMBER"></ion-input>
+                <ion-input type="number" [(ngModel)]="phoneNumber" placeholder="ENTER MOBILE NUMBER"></ion-input>
             </ion-item>
-            <button class="item-cus" ion-button full>VERIFY USING OTP</button>
-            <div class="captchas">
 
-            </div>
+            <button class="item-cus" id="sign-in-button" (click)="signIn(phoneNumber);" ion-button full>VERIFY USING OTP</button>
+            <!-- <div class="captchas">
+
+            </div> -->
         </ion-col>
     </ion-row>
 
